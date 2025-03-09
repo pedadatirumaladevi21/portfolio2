@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Tirumala Devi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            margin: 0;
+            font-family: 'Fantasy', cursive;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: black;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        nav ul li img {
+            width: 20px;
+            height: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #ff7f50;
+        }
+        #projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            background-color: black;
+        }
+        .project {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(255, 127, 80, 0.5);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #ff7f50;
+        }
+        .project p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .project button {
+            background-color: transparent;
+            border: 2px solid #ff7f50;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #ff7f50;
+            font-size: 1rem;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-family: 'Fantasy', cursive;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .project button:hover {
+            background-color: #ff7f50;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            #projects {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+            .title {
+                font-size: 1.5rem;
+            }
+            .project h2 {
+                font-size: 1.2rem;
+            }
+            .project p {
+                font-size: 0.9rem;
+            }
+            .project button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2><img src="./assests/girl.png" alt="Girl"><span> Tirumala Devi</span></h2>
+        <nav>
+            <ul>
+                <li><img src="./assests/home.png" alt="home"><a href="./index.html">Home</a></li>
+                <li><img src="./assests/about.png" alt="about"><a href="./about.html">About</a></li>
+                <li><img src="./assests/project.png" alt="projects"><a href="./projects.html">Projects</a></li>
+                <li><img src="./assests/address-book.png" alt="contact"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="title">Projects</h2>
+        <section id="projects">
+            <div class="project">
+                <img src="./assests/Netflix.png" alt="Netflix Landing Page">
+                <h2>Netflix Landing Page</h2>
+                <p>A replica of the Netflix homepage, designed using HTML, CSS, and JavaScript for an interactive user experience.</p>
+                <a href="https://github.com/pedadatirumaladevi21/gits-netflix/commit/4f207751c5411ea980e0a745d7c4d9d6ac1caf92" target="_blank"><button>GitHub</button></a>
+            </div>
+            <div class="project">
+                <img src="./assests/code-editor.png" alt="Code Editor">
+                <h2>Code Editor</h2>
+                <p>An online code editor where users can write HTML, CSS, and JavaScript code. Built using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/pedadatirumaladevi21/code-editor/commit/c061cdb23bb92cbd68b039024579197ca9d2a797" target="_blank"><button>GitHub</button></a>
+            </div>
+            <div class="project">
+                <img src="./assests/Portfolio.png" alt="Portfolio Website">
+                <h2>Portfolio Website</h2>
+                <p>A personal portfolio showcasing my skills, projects, and contact information. Designed using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/pedadatirumaladevi21/portfolio1/commit/8a4128b75cd8d4fa8475fd239ce8909117379fa7" target="_blank"><button>GitHub</button></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

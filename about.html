@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirumala Devi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            margin: 0;
+            font-family: 'Fantasy', cursive;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: black;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        #about-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 30px 50px;
+        }
+        .info-content {
+            width: 40%;
+            padding-right: 30px;
+        }
+        .about-content {
+            width: 50%;
+        }
+        .about-content h1 {
+            color: #ff7f50;
+            font-size: 30px;
+            margin-top: -20px;
+        }
+        p{justify-content: space-evenly;}
+        .progress {
+            background: gray;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 10px;
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            background: #ff7f50;
+            height: 100%;
+        }
+        .btn-linkedin {
+            display: inline-block;
+            background-color: #ff7f50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-linkedin:hover {
+            background-color: #e67340;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            #about-section {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+            .info-content, .about-content {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            #about-section {
+                padding: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+            header h2 {
+                font-size: 20px;
+            }
+            .btn-linkedin {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h2><img src="./assests/girl.png" alt="Girl"><span> Tirumala Devi</span></h2>
+        <nav>
+            <ul>
+                <li><img src="./assests/home.png" alt="home"><a href="./index.html">Home</a></li>
+                <li><img src="./assests/about.png" alt="about"><a href="./about.html">About</a></li>
+                <li><img src="./assests/project.png" alt="projects"><a href="./projects.html">Projects</a></li>
+                <li><img src="./assests/address-book.png" alt="contact"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-section">
+            <div class="info-content">
+                <p><span class="title-s">Name: </span><span>Tirumala Devi</span></p>
+                <p><span class="title-s">Experience: </span><span>Fresher</span></p>
+                <p class="title-s">Skills</p>
+                <span>SQL</span> <span class="pull-right">93%</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 93%;"></div>
+                </div>
+                <span>PYTHON</span> <span class="pull-right">75%</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+                <span>Frontend technologies</span> <span class="pull-right">70%</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <span>NoSQL Databases</span> <span class="pull-right">70%</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <span>Data Science</span> <span class="pull-right">75%</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>As a recent Electronics and Communication Engineering graduate, I have gained hands-on experience in Python, Data Science, Frontend Development, SQL, NoSQL databases, PowerBI, and data visualization. I am eager to apply these skills to create data-driven insights and impactful solutions in a dynamic environment.</p>
+                <ul>
+                    <li><strong>Education:</strong> Bachelor of Technology</li>
+                    <li><strong>Languages:</strong> English, Telugu</li>
+                    <li><strong>Achievements:</strong> 50+ SQL and 30+ Python problems solved on LeetCode; 5-star ratings in SQL & Python on HackerRank.</li>
+                    <li><strong>Interests:</strong> Painting, Drawing, Playing Badminton</li>
+                    <li><strong>Other skills:</strong> Power BI, MS Word, MS Excel</li>
+                </ul>
+                <p><a href="https://www.linkedin.com/in/pedada-tirumala-devi/" class="btn-linkedin">LinkedIn</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
